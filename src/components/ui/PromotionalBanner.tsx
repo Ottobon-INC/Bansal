@@ -38,11 +38,11 @@ export default function PromotionalBanner({ banners }: { banners?: string[] }) {
           
           {/* Left Column: Chairman/Director Profile */}
           <div className="w-full lg:w-[40%] flex flex-col items-start">
-            <div className="w-full relative flex justify-start items-end min-h-[250px]">
+            <div className="w-full relative flex justify-start mb-6">
               <img 
-                src="/satish.png" 
+                src="/satishh.jpg" 
                 alt="Director" 
-                className="w-full max-w-[250px] h-auto object-contain mb-4"
+                className="w-full max-w-[400px] h-auto object-cover object-top rounded-2xl shadow-lg"
               />
             </div>
             

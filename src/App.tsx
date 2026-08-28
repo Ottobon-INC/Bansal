@@ -7,18 +7,12 @@ import About from './features/about/pages/About';
 import Achievements from './features/achievements/pages/Achievements';
 import Contact from './features/contact/pages/Contact';
 import Courses from './features/courses/pages/Courses';
-import BullsEyeForJee from './features/courses/pages/BullsEyeForJee';
-import BullsEyeForNeet from './features/courses/pages/BullsEyeForNeet';
 import DifferenceBetweenJeeAdvancedAndNeetUgCourses from './features/courses/pages/DifferenceBetweenJeeAdvancedAndNeetUgCourses';
 import InterBipcIntegratedWithNeetUgAGatewayToMedicalSuccess from './features/courses/pages/InterBipcIntegratedWithNeetUgAGatewayToMedicalSuccess';
 import JeeAdvanced from './features/courses/pages/JeeAdvanced';
 import JeeAdvancedCourseAComprehensiveGuideToAceTheExam from './features/courses/pages/JeeAdvancedCourseAComprehensiveGuideToAceTheExam';
 import NeetUg from './features/courses/pages/NeetUg';
-import NucleusForJee from './features/courses/pages/NucleusForJee';
-import NucleusForNeet from './features/courses/pages/NucleusForNeet';
 import PopularCourses from './features/courses/pages/PopularCourses';
-import SterlingForJeeDropper from './features/courses/pages/SterlingForJeeDropper';
-import SterlingForNeetDropper from './features/courses/pages/SterlingForNeetDropper';
 import WhyChooseBansalClassesVizagForJeeAdvancedAndNeetUgPreparation from './features/courses/pages/WhyChooseBansalClassesVizagForJeeAdvancedAndNeetUgPreparation';
 
 function App() {

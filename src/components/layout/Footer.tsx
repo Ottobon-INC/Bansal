@@ -69,8 +69,8 @@ export default function Footer() {
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 text-college-gold mr-3 mt-1 flex-shrink-0" />
                 <span className="text-gray-300 text-sm">
-                  49-52-5, Sankara Matam Rd, Beside Reliance Fresh,<br />
-                  Santhipuram, Visakhapatnam 530016
+                  49-52-5, Sankara Matam Rd, Beside Karnataka Bank,<br />
+                  Akkayapalem, Visakhapatnam 530016
                 </span>
               </li>
               <li className="flex items-center">

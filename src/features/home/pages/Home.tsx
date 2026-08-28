@@ -73,7 +73,6 @@ export default function Home() {
       </Helmet>
 
       <main>
-        {/* Hero Section */}
         <HeroSection 
           title="Transforming Dreams Into Reality"
           subtitle="Join the legacy of excellence. Expert coaching for JEE Advanced, NEET UG, and Board Examinations."

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { AlertTriangle, Loader2, Volume2, VolumeX, RotateCcw } from 'lucide-react';
-import { focusAnalyticsService } from '../../../services/focusAnalyticsService';
+import { focusAnalyticsService } from '../../services/focusAnalyticsService';
 
 export interface FocusInterventionProps {
   /**

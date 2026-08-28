@@ -1,10 +1,20 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Search, ArrowRight } from 'lucide-react';
-import { useState } from 'react';
+import { Menu, X, ArrowRight } from 'lucide-react';
+import { useState, useEffect } from 'react';
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isLightSlide, setIsLightSlide] = useState(false);
   const location = useLocation();
+
+  useEffect(() => {
+    const handleSlideChange = (e: Event) => {
+      const customEvent = e as CustomEvent;
+      setIsLightSlide(customEvent.detail === 1);
+    };
+    window.addEventListener('heroSlideChange', handleSlideChange);
+    return () => window.removeEventListener('heroSlideChange', handleSlideChange);
+  }, []);
 
   const navigation = [
     { name: 'Specialties', href: '/courses' }, // Renamed some to match vibe or keep original? Let's keep original names but styled like the ref.
@@ -18,8 +28,11 @@ export default function Header() {
   const isHome = location.pathname === '/';
   const isActive = (path: string) => location.pathname === path;
 
+  // Determine text color based on home page and slide
+  const useDarkText = isHome && isLightSlide;
+
   return (
-    <header id="site-header" className={`${isHome ? 'absolute top-0 left-0 w-full z-50 bg-transparent pt-8 md:pt-10' : 'bg-college-navy py-2'} px-4 md:px-8 transition-all duration-300`}>
+    <header id="site-header" className={`${isHome ? 'absolute top-0 left-0 w-full z-50 bg-transparent pt-4' : 'bg-college-navy py-2'} px-4 md:px-8 transition-all duration-300`}>
       <nav id="main-navigation" className="container mx-auto flex items-start justify-between relative">
         
         {/* Left Navigation Pills (Desktop) */}
@@ -31,8 +44,8 @@ export default function Header() {
               to={item.href}
               className={`px-5 py-2 rounded-full border text-sm font-medium transition-all ${
                 isActive(item.href)
-                  ? 'border-white bg-white/20 text-white backdrop-blur-md'
-                  : 'border-white/30 text-white/90 hover:bg-white/10 hover:border-white backdrop-blur-sm'
+                  ? (useDarkText ? 'border-college-navy bg-college-navy/10 text-college-navy backdrop-blur-md' : 'border-white bg-white/20 text-white backdrop-blur-md')
+                  : (useDarkText ? 'border-college-navy/30 text-college-navy hover:bg-college-navy/10 hover:border-college-navy backdrop-blur-sm' : 'border-white/30 text-white/90 hover:bg-white/10 hover:border-white backdrop-blur-sm')
               }`}
             >
               {item.name}
@@ -41,12 +54,12 @@ export default function Header() {
         </div>
 
         {/* Center Logo Pill */}
-        <div className="absolute left-1/2 -translate-x-1/2 top-0 z-50">
-          <Link id="nav-logo-home" to="/" className="block bg-white rounded-b-3xl px-4 md:px-8 pb-4 pt-2 shadow-xl flex items-center justify-center">
+        <div className={`absolute left-1/2 -translate-x-1/2 ${isHome ? '-top-4' : '-top-2'} z-50`}>
+          <Link id="nav-logo-home" to="/" className={`block bg-white ${isHome ? 'rounded-b-3xl px-4 md:px-6 pt-4 pb-2' : 'rounded-b-3xl px-4 md:px-6 py-2'} shadow-xl flex items-center justify-center`}>
             <img 
               src="/wp-content/uploads/2024/11/bansal-removebg-preview.png" 
               alt="Bansal Junior College" 
-              className="h-20 md:h-24 w-auto object-contain -my-4 md:-my-6"
+              className="h-16 md:h-20 w-auto object-contain"
               onError={(e) => {
                 (e.target as HTMLImageElement).src = 'https://via.placeholder.com/200x50?text=Bansal+Junior+College';
               }}
@@ -56,12 +69,7 @@ export default function Header() {
 
         {/* Right Action Pills (Desktop) */}
         <div className="hidden lg:flex items-center space-x-3 pt-4">
-          {/* Search Button */}
-          <button id="nav-search-button" className="flex items-center px-4 py-2 rounded-full border border-white/30 text-white/90 hover:bg-white/10 hover:border-white backdrop-blur-sm text-sm transition-all">
-            <span className="mr-2">Search here...</span>
-            <Search className="w-4 h-4" />
-          </button>
-          
+
           {/* Enroll Now Button */}
           <Link 
             to="/contact-us"
@@ -73,20 +81,17 @@ export default function Header() {
             </div>
           </Link>
           
-          {/* Menu Icon */}
-          <button className="bg-gray-900 text-white p-2.5 rounded-full hover:bg-black transition-all shadow-lg">
-            <Menu className="w-5 h-5" />
-          </button>
+
         </div>
 
-        {/* Mobile Menu Button (Only visible on small screens) */}
-        <div className="lg:hidden flex items-center justify-between w-full pt-2 relative z-40">
-          <div className="flex-1"></div>
+        {/* Mobile Menu Button */}
+        <div className="lg:hidden flex items-center pt-4">
           <button 
-            className="text-white p-2 bg-gray-900 rounded-full shadow-lg"
+            id="mobile-menu-toggle"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className={`${useDarkText ? 'text-college-navy hover:text-black' : 'text-white hover:text-college-gold'} transition-colors p-2`}
           >
-            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isMobileMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
           </button>
         </div>
       </nav>

@@ -14,9 +14,6 @@ export default function Contact() {
     e.preventDefault();
     setStatus('loading');
 
-    // Replace with your actual Web3Forms access key
-    const ACCESS_KEY = "YOUR_WEB3FORMS_ACCESS_KEY";
-
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -25,7 +22,7 @@ export default function Contact() {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          access_key: ACCESS_KEY,
+          access_key: "be39e75f-eb1e-4df9-9120-388bd47ce932",
           name: formData.name,
           email: formData.email,
           message: formData.message,
@@ -81,7 +78,7 @@ export default function Contact() {
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">Our Location</h3>
               <a href="https://maps.app.goo.gl/3HSgEqCEVfjYzBAd8" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-college-navy transition-colors text-sm leading-relaxed">
-                49-52-5, Sankara Matam Rd, Beside Reliance Fresh, Santhipuram, Visakhapatnam 530016
+                49-52-5, Sankara Matam Rd, Beside Karnataka Bank, Akkayapalem, Visakhapatnam 530016
               </a>
             </div>
 

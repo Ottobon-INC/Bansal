@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import SectionHeading from '../../../components/ui/SectionHeading';
-import { GraduationCap, Briefcase } from 'lucide-react';
+import { GraduationCap, Briefcase, BookOpen } from 'lucide-react';
 
 export default function About() {
   return (
@@ -71,7 +71,7 @@ export default function About() {
                 <div className="w-24 h-0.5 bg-white mr-4"></div>
                 <h2 className="text-white text-lg font-medium tracking-wide">The Visionary Behind Bansal Junior College</h2>
               </div>
-              <div className="relative flex-1 w-full mt-4">
+              <div className="relative flex-1 w-full mt-4 min-h-[400px] lg:min-h-0">
                 <img 
                   src="/wp-content/uploads/elementor/thumbs/Untitled-design-11-1-qxpyb3itkifdvskhhkq3ijtvl30u2qvkjg63o0txzs.png" 
                   alt="Late V.K. Bansal Sir" 
@@ -81,38 +81,172 @@ export default function About() {
             </div>
           </div>
 
-          {/* Director Message Section */}
-          <div className="my-32 flex flex-col md:flex-row gap-12 lg:gap-20 items-start">
-            {/* Left Column */}
+
+
+          {/* Satish Director Section */}
+          <div className="my-32 flex flex-col md:flex-row gap-12 lg:gap-20 items-center">
+            {/* Left Image Section */}
             <div className="w-full md:w-5/12">
-              <div className="flex items-center mb-8">
-                <div className="w-16 h-0.5 bg-college-navy mr-4"></div>
-                <h2 className="text-xl text-gray-800 font-medium">From the Director's Desk</h2>
-              </div>
               <img 
-                src="/wp-content/uploads/elementor/thumbs/Bansal-600-x-500-px-qxpz4t75lz2jyuq5b9qm9u8etvo4uivqrjkzqzpz7s.png" 
-                alt="Sameer Bansal" 
-                className="w-full h-auto object-cover shadow-sm"
+                src="/satishh.jpg" 
+                alt="Satish Guntreddi" 
+                className="w-full h-auto object-contain shadow-lg rounded-2xl"
               />
             </div>
 
-            {/* Right Column */}
-            <div className="w-full md:w-7/12 pt-4 md:pt-20">
-              <h3 className="text-4xl font-bold text-gray-800 mb-2 tracking-wide">Sameer Bansal</h3>
-              <p className="text-xl text-gray-600 mb-10">MD & CEO</p>
+            {/* Right Content Section */}
+            <div className="w-full md:w-7/12">
+              <div className="flex items-center mb-8">
+                <div className="w-16 h-0.5 bg-college-navy mr-4"></div>
+                <h2 className="text-xl text-gray-800 font-medium tracking-wide">Leadership & Excellence</h2>
+              </div>
 
-              <div className="space-y-8">
-                <p className="text-gray-600 leading-relaxed text-[1.1rem]">
-                  Success demands hard work, proper guidance, and the wisdom to focus on what truly matters. At Bansal Junior College, we take pride in meeting the expectations of thousands of students and parents by delivering quality education through our unique teaching methodologies.
-                </p>
-                
-                <p className="text-gray-600 leading-relaxed text-[1.1rem]">
-                  As patterns evolve, so do we, embracing change with determination to ensure the best outcomes for our students. With a steadfast commitment to excellence, we continue to guide aspirants towards achieving their dreams in competitive exams.
-                </p>
+              <h3 className="text-4xl font-bold text-college-navy mb-2 tracking-wide">Satish Guntreddi</h3>
+              <p className="text-lg text-college-gold font-bold mb-10 uppercase tracking-wider">Head of Chemistry and Director</p>
+
+              <div className="space-y-6">
+                <div className="flex items-center bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mr-5 shadow-sm text-college-navy shrink-0">
+                    <BookOpen className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-500 font-semibold uppercase tracking-wider mb-1">Subject</p>
+                    <p className="text-lg font-bold text-gray-800">Chemistry</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mr-5 shadow-sm text-college-navy shrink-0">
+                    <GraduationCap className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-500 font-semibold uppercase tracking-wider mb-1">Qualification</p>
+                    <p className="text-lg font-bold text-gray-800">M.Sc</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mr-5 shadow-sm text-college-navy shrink-0">
+                    <Briefcase className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-500 font-semibold uppercase tracking-wider mb-1">Experience</p>
+                    <p className="text-lg font-bold text-gray-800">22 years</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
+          {/* Ramesh Director Section */}
+          <div className="my-32 flex flex-col md:flex-row-reverse gap-12 lg:gap-20 items-center">
+            {/* Right Image Section */}
+            <div className="w-full md:w-5/12">
+              <img 
+                src="/ramesh.jpg" 
+                alt="Ramesh Gurugubelli" 
+                className="w-full h-[450px] object-cover object-top shadow-lg rounded-2xl"
+              />
+            </div>
+
+            {/* Left Content Section */}
+            <div className="w-full md:w-7/12">
+              <div className="flex items-center mb-8">
+                <div className="w-16 h-0.5 bg-college-navy mr-4"></div>
+                <h2 className="text-xl text-gray-800 font-medium tracking-wide">Leadership & Excellence</h2>
+              </div>
+
+              <h3 className="text-4xl font-bold text-college-navy mb-2 tracking-wide">Ramesh Gurugubelli</h3>
+              <p className="text-lg text-college-gold font-bold mb-10 uppercase tracking-wider">Head of Physics and Director</p>
+
+              <div className="space-y-6">
+                <div className="flex items-center bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mr-5 shadow-sm text-college-navy shrink-0">
+                    <BookOpen className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-500 font-semibold uppercase tracking-wider mb-1">Subject</p>
+                    <p className="text-lg font-bold text-gray-800">Physics</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mr-5 shadow-sm text-college-navy shrink-0">
+                    <GraduationCap className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-500 font-semibold uppercase tracking-wider mb-1">Qualification</p>
+                    <p className="text-lg font-bold text-gray-800">MSc</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mr-5 shadow-sm text-college-navy shrink-0">
+                    <Briefcase className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-500 font-semibold uppercase tracking-wider mb-1">Experience</p>
+                    <p className="text-lg font-bold text-gray-800">25 years</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Principal - B. Gowri Shankar Section */}
+          <div className="my-32 flex flex-col md:flex-row gap-12 lg:gap-20 items-center">
+            {/* Left Image Section */}
+            <div className="w-full md:w-5/12">
+              <img 
+                src="/gowrishankar.jpeg" 
+                alt="B. Gowri Shankar" 
+                className="w-full h-[450px] object-cover object-top shadow-lg rounded-2xl"
+              />
+            </div>
+
+            {/* Right Content Section */}
+            <div className="w-full md:w-7/12">
+              <div className="flex items-center mb-8">
+                <div className="w-16 h-0.5 bg-college-navy mr-4"></div>
+                <h2 className="text-xl text-gray-800 font-medium tracking-wide">Principal & Academic Leader</h2>
+              </div>
+
+              <h3 className="text-4xl font-bold text-college-navy mb-2 tracking-wide">B. Gowri Shankar</h3>
+              <p className="text-lg text-college-gold font-bold mb-10 uppercase tracking-wider">Principal and Botany Faculty</p>
+
+              <div className="space-y-6">
+                <div className="flex items-center bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mr-5 shadow-sm text-college-navy shrink-0">
+                    <BookOpen className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-500 font-semibold uppercase tracking-wider mb-1">Subject</p>
+                    <p className="text-lg font-bold text-gray-800">Botany</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mr-5 shadow-sm text-college-navy shrink-0">
+                    <GraduationCap className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-500 font-semibold uppercase tracking-wider mb-1">Qualification</p>
+                    <p className="text-lg font-bold text-gray-800">M.Sc, M.Ed</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mr-5 shadow-sm text-college-navy shrink-0">
+                    <Briefcase className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-500 font-semibold uppercase tracking-wider mb-1">Experience</p>
+                    <p className="text-lg font-bold text-gray-800">34 years</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
           {/* Faculty Section */}
           <div className="mt-32">
@@ -130,16 +264,16 @@ export default function About() {
                 {
                   name: "Dr. Bh Venkat Siva Apparao",
                   role: "Chemistry Faculty",
-                  qualifications: "MSc Chemistry (University of Hyderabad), Ph.D (Andhra University)",
+                  qualifications: "MSc chemistry (university of Hyderabad), Ph.d (Andhra University)",
                   experience: "15 years",
-                  image: "/BUSA NAGESWARA RAO.jpg"
+                  image: "/venkat siva apparao .jpg"
                 },
                 {
-                  name: "Kameswara Rao Eswara",
-                  role: "Mathematics Faculty",
-                  qualifications: "M.Sc., B.Ed",
-                  experience: "15 years",
-                  image: "/Kameswara Rao Eswara.jpg"
+                  name: "Busa Nageswara Rao",
+                  role: "Physics Faculty",
+                  qualifications: "M.Sc, B.Ed",
+                  experience: "20 years",
+                  image: "/BUSA NAGESWARA RAO.jpg"
                 },
                 {
                   name: "Terli Rambabu",
@@ -149,11 +283,18 @@ export default function About() {
                   image: "/Terli Rambabu.jpg"
                 },
                 {
-                  name: "Hema Sudharani Kolli",
-                  role: "Chemistry Faculty",
-                  qualifications: "MSc. Chemistry",
-                  experience: "Experienced Faculty",
-                  image: "/Hema Sudharani Kolli .jpg"
+                  name: "Kameswara Rao Eswara",
+                  role: "Mathematics Faculty",
+                  qualifications: "M.Sc., B.Ed",
+                  experience: "15 years",
+                  image: "/Kameswara Rao Eswara.jpg"
+                },
+                {
+                  name: "Jami Mary",
+                  role: "Zoology Faculty",
+                  qualifications: "M.sc zoology",
+                  experience: "8 years",
+                  image: "/Jami Mary.jpg"
                 },
                 {
                   name: "Polisetty Lalitha",
@@ -168,6 +309,13 @@ export default function About() {
                   qualifications: "B.E (Mechanical Engineering)",
                   experience: "9 years",
                   image: "/Praveen Kumar Bonthada.jpg"
+                },
+                {
+                  name: "Hema Sudharani Kolli",
+                  role: "Chemistry Faculty",
+                  qualifications: "MSc. Chemistry",
+                  experience: "5 years",
+                  image: "/Hema Sudharani Kolli .jpg"
                 }
               ].map((expert, index) => (
                 <div key={index} className="flex flex-col md:flex-row gap-8 items-center bg-gray-50 rounded-2xl p-6 shadow-sm border border-gray-100">

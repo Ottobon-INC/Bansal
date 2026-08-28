@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { Calendar, Clock, GraduationCap, Target, ChevronRight } from 'lucide-react';
+import { Clock, GraduationCap, Target, ChevronRight } from 'lucide-react';
 
 export default function JeeAdvanced() {
   const programs = [

@@ -1,4 +1,3 @@
-import React from 'react';
 import './ProgramCube.css';
 import { Target, Award, Activity, Microscope, Rocket, BookOpen } from 'lucide-react';
 
