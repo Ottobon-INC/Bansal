@@ -7,7 +7,7 @@ services:
     ports:
       # Map host port 80 to container port 80
       # If port 80 is taken on your VPS, you can change this to e.g. "8080:80"
-      - "80:80"
+      - "8080:80"
     restart: unless-stopped
     environment:
       - NODE_ENV=production
