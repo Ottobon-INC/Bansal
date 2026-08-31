@@ -1,10 +1,13 @@
+# .dockerignore - exclude files not needed for Docker build
 node_modules
-npm-debug.log
-dist
 .git
-.github
-.env*
+.gitignore
 Dockerfile
-.dockerignore
 docker-compose.yml
-nginx.conf
+README.md
+*.md
+*.log
+*.env
+npm-debug.log
+yarn-error.log
+dist
