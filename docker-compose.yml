@@ -9,6 +9,8 @@ services:
       - NODE_ENV=production
     labels:
       - "traefik.enable=true"
+      # Tell Traefik exactly which network to use for routing
+      - "traefik.docker.network=${TRAEFIK_NETWORK:-web}"
       # Using a variable for the domain. It falls back to bansalclassesvizag.com if not set.
       - "traefik.http.routers.bansal-frontend.rule=Host(`${DOMAIN:-bansalclassesvizag.com}`)"
       - "traefik.http.services.bansal-frontend.loadbalancer.server.port=80"
