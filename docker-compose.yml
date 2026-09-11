@@ -4,10 +4,24 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: bansal-react-frontend
-    ports:
-      # Map host port 80 to container port 80
-      # If port 80 is taken on your VPS, you can change this to e.g. "8080:80"
-      - "8080:80"
+    # We no longer expose ports directly to the host since Traefik handles routing
+    # ports:
+    #   - "8080:80"
     restart: unless-stopped
     environment:
       - NODE_ENV=production
+    networks:
+      - traefik
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.website.rule=Host(`bansalclassesvizag.com`, `www.bansalclassesvizag.com`)"
+      - "traefik.http.routers.website.entrypoints=websecure"
+      - "traefik.http.routers.website.tls=true"
+      - "traefik.http.routers.website.tls.certresolver=letsencrypt"
+      - "traefik.http.services.website.loadbalancer.server.port=80"
+
+networks:
+  traefik:
+    # This must match the name of the docker network your Traefik instance is running on.
+    # If your traefik network has a different name, change it here.
+    external: true
