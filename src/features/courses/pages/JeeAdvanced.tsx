@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import SEO from '../../../components/seo/SEO';
 import { Link } from 'react-router-dom';
 import { Clock, GraduationCap, Target, ChevronRight } from 'lucide-react';
 
@@ -52,10 +52,22 @@ export default function JeeAdvanced() {
 
   return (
     <>
-      <Helmet>
-        <title>JEE Advanced Programs | Bansal Junior College Vizag</title>
-        <meta name="description" content="Discover JEE Advanced Programs | Bansal Junior College Vizag. Expert coaching, comprehensive study material, and proven methodologies at Bansal Junior College Vizag." />
-      </Helmet>
+      <SEO
+        title="JEE Advanced Programs | Bansal Junior College Vizag"
+        description="Discover JEE Advanced Programs | Bansal Junior College Vizag. Expert coaching, comprehensive study material, and proven methodologies at Bansal Junior College Vizag."
+        canonicalUrl="https://bansalclassesvizag.com/jee-advanced"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "Course",
+          "name": "JEE Advanced Programs",
+          "description": "Discover JEE Advanced Programs | Bansal Junior College Vizag. Expert coaching, comprehensive study material, and proven methodologies.",
+          "provider": {
+            "@type": "EducationalOrganization",
+            "name": "Bansal Junior College Vizag",
+            "sameAs": "https://bansalclassesvizag.com/"
+          }
+        }}
+      />
 
       {/* Hero Section */}
       <div className="bg-college-navy text-white py-16 md:py-24 relative overflow-hidden">

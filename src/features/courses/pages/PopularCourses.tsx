@@ -1,14 +1,14 @@
 import parse from 'html-react-parser';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../../../components/seo/SEO';
 
 export default function PopularCourses() {
   return (
     <>
-      <Helmet>
-        <title>Popular Courses – bansalclassesvizag.com</title>
-        <meta name="description" content="Discover Popular Courses – bansalclassesvizag.com. Expert coaching, comprehensive study material, and proven methodologies at Bansal Junior College Vizag." />
-        
-      </Helmet>
+      <SEO
+        title="Popular Courses – bansalclassesvizag.com"
+        description="Discover Popular Courses – bansalclassesvizag.com. Expert coaching, comprehensive study material, and proven methodologies at Bansal Junior College Vizag."
+        canonicalUrl="https://bansalclassesvizag.com/popular-courses"
+      />
       <div id="content" className="site-content">
         {parse(`
 		<div class="ast-container">

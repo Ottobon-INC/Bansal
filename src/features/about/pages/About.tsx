@@ -1,14 +1,15 @@
-import { Helmet } from 'react-helmet-async';
+import SEO from '../../../components/seo/SEO';
 import SectionHeading from '../../../components/ui/SectionHeading';
 import { GraduationCap, Briefcase, BookOpen } from 'lucide-react';
 
 export default function About() {
   return (
     <>
-      <Helmet>
-        <title>About Us | Bansal Junior College Vizag</title>
-        <meta name="description" content="Learn about the legacy of Bansal Junior College Vizag. We are committed to excellence in education and providing top-tier coaching for JEE and NEET." />
-      </Helmet>
+      <SEO
+        title="About Us | Bansal Junior College Vizag"
+        description="Learn about the legacy of Bansal Junior College Vizag. We are committed to excellence in education and providing top-tier coaching for JEE and NEET."
+        canonicalUrl="https://bansalclassesvizag.com/about-us"
+      />
 
       {/* Page Header */}
       <header className="bg-college-navy text-white py-10">

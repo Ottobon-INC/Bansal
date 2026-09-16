@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import SEO from '../../../components/seo/SEO';
 import CourseCard from '../../../components/ui/CourseCard';
 import SectionHeading from '../../../components/ui/SectionHeading';
 
@@ -62,10 +62,11 @@ export default function Courses() {
 
   return (
     <>
-      <Helmet>
-        <title>Courses & Programs | Bansal Junior College Vizag</title>
-        <meta name="description" content="Discover our flagship academic programs including JEE Advanced, NEET UG, Sterling Droppers, and Foundation courses at Bansal Junior College." />
-      </Helmet>
+      <SEO
+        title="Courses & Programs | Bansal Junior College Vizag"
+        description="Discover our flagship academic programs including JEE Advanced, NEET UG, Sterling Droppers, and Foundation courses at Bansal Junior College."
+        canonicalUrl="https://bansalclassesvizag.com/courses"
+      />
 
       {/* Page Header */}
       <header className="bg-college-navy text-white py-12 md:py-20 relative overflow-hidden">

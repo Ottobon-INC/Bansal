@@ -1,22 +1,22 @@
 import parse from 'html-react-parser';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../../../components/seo/SEO';
 
 export default function InterBipcIntegratedWithNeetUgAGatewayToMedicalSuccess() {
   return (
     <>
-      <Helmet>
-        <title>Inter BiPC Integrated with NEET UG: A Gateway to Medical Success – bansalclassesvizag.com</title>
-        <meta name="description" content="Discover Inter BiPC Integrated with NEET UG: A Gateway to Medical Success – bansalclassesvizag.com. Expert coaching, comprehensive study material, and proven methodologies at Bansal Junior College Vizag." />
-        
-      </Helmet>
+      <SEO
+        title="Inter BiPC Integrated with NEET UG: A Gateway to Medical Success – bansalclassesvizag.com"
+        description="Discover Inter BiPC Integrated with NEET UG: A Gateway to Medical Success – bansalclassesvizag.com. Expert coaching, comprehensive study material, and proven methodologies at Bansal Junior College Vizag."
+        canonicalUrl="https://bansalclassesvizag.com/inter-bipc-integrated-with-neet-ug-a-gateway-to-medical-success"
+        ogType="article"
+      />
       <div id="content" className="site-content">
         {parse(`
 		<div class="ast-container">
 		
 
 	<div id="primary" class="content-area primary">
-
-		
+				
 					<main id="main" class="site-main">
 				
 

@@ -1,14 +1,15 @@
 import parse from 'html-react-parser';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../../../components/seo/SEO';
 
 export default function DifferenceBetweenJeeAdvancedAndNeetUgCourses() {
   return (
     <>
-      <Helmet>
-        <title>Difference Between JEE Advanced and NEET UG Courses – bansalclassesvizag.com</title>
-        <meta name="description" content="Discover Difference Between JEE Advanced and NEET UG Courses – bansalclassesvizag.com. Expert coaching, comprehensive study material, and proven methodologies at Bansal Junior College Vizag." />
-        
-      </Helmet>
+      <SEO
+        title="Difference Between JEE Advanced and NEET UG Courses – bansalclassesvizag.com"
+        description="Discover Difference Between JEE Advanced and NEET UG Courses – bansalclassesvizag.com. Expert coaching, comprehensive study material, and proven methodologies at Bansal Junior College Vizag."
+        canonicalUrl="https://bansalclassesvizag.com/difference-between-jee-advanced-and-neet-ug-courses"
+        ogType="article"
+      />
       <div id="content" className="site-content">
         {parse(`
 		<div class="ast-container">

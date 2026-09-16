@@ -27,17 +27,17 @@ export default function HeroSection({
 
   return (
     <div className="bg-white p-2 md:p-4">
-      <div className="relative bg-college-navy min-h-[calc(100vh-2rem)] flex items-center overflow-hidden rounded-[2.5rem] shadow-2xl">
+      <div className="relative bg-college-navy min-h-[calc(100vh-2rem)] flex flex-col justify-center overflow-hidden rounded-[2.5rem] shadow-2xl">
         
         <motion.div 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
-          className="absolute inset-0 w-full h-full flex items-center pt-28 pb-16"
+          className="relative w-full h-full flex flex-col justify-center min-h-[calc(100vh-2rem)]"
         >
               {/* Background Image with Overlay */}
               {backgroundImage && (
-                <>
+                <div className="absolute inset-0 z-0">
                   <div 
                     className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-100"
                     style={{ backgroundImage: `url('${backgroundImage}')` }}
@@ -45,10 +45,10 @@ export default function HeroSection({
                   <div className="absolute inset-0 z-10 bg-college-navy/40 mix-blend-multiply" />
                   <div className="absolute inset-0 z-10 bg-gradient-to-r from-college-navy/80 via-college-navy/30 to-transparent" />
                   <div className="absolute inset-0 z-10 bg-gradient-to-t from-college-navy/60 via-transparent to-transparent" />
-                </>
+                </div>
               )}
 
-              <div className="container mx-auto px-4 z-20 relative flex flex-col md:flex-row items-center justify-between gap-8 w-full max-w-7xl">
+              <div className="container mx-auto px-4 z-20 relative flex flex-col md:flex-row items-center justify-between gap-8 w-full max-w-7xl pt-40 pb-12 md:pt-28 md:pb-16">
                 <div className="w-full md:w-1/2 text-left">
                   <span className="inline-block py-1.5 px-4 rounded-full bg-college-gold/20 text-college-gold font-bold text-sm tracking-widest mb-6 border border-college-gold/50 shadow-sm uppercase">
                     Premier Educational Institute

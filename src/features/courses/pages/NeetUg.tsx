@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import SEO from '../../../components/seo/SEO';
 import { Link } from 'react-router-dom';
 import { Clock, GraduationCap, Target, ChevronRight } from 'lucide-react';
 
@@ -45,17 +45,29 @@ export default function NeetUg() {
       eligibility: "For 12th Passed/Appeared Students",
       class: "XII PASSED",
       batches: [
-        { phase: "Phase I", medium: "English", target: "2026", admission: "BOOST or Direct", date: "09/04/2025" },
+        { phase: "Phase I", medium: "English", target: "2026", admission: "BOOST or Direct", date: "09/04/2025" }
       ]
     }
   ];
 
   return (
     <>
-      <Helmet>
-        <title>NEET UG Programs | Bansal Junior College Vizag</title>
-        <meta name="description" content="Discover NEET UG Programs | Bansal Junior College Vizag. Expert coaching, comprehensive study material, and proven methodologies at Bansal Junior College Vizag." />
-      </Helmet>
+      <SEO
+        title="NEET UG Programs | Bansal Junior College Vizag"
+        description="Discover NEET UG Programs | Bansal Junior College Vizag. Expert coaching, comprehensive study material, and proven methodologies at Bansal Junior College Vizag."
+        canonicalUrl="https://bansalclassesvizag.com/neet-ug"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "Course",
+          "name": "NEET UG Programs",
+          "description": "Discover NEET UG Programs | Bansal Junior College Vizag. Expert coaching, comprehensive study material, and proven methodologies.",
+          "provider": {
+            "@type": "EducationalOrganization",
+            "name": "Bansal Junior College Vizag",
+            "sameAs": "https://bansalclassesvizag.com/"
+          }
+        }}
+      />
 
       {/* Hero Section */}
       <div className="bg-college-navy text-white py-16 md:py-24 relative overflow-hidden">

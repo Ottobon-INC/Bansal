@@ -1,22 +1,22 @@
 import parse from 'html-react-parser';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../../../components/seo/SEO';
 
 export default function WhyChooseBansalClassesVizagForJeeAdvancedAndNeetUgPreparation() {
   return (
     <>
-      <Helmet>
-        <title>Why Choose Bansal Junior College Vizag for JEE Advanced and NEET UG Preparation? – bansalclassesvizag.com</title>
-        <meta name="description" content="Discover Why Choose Bansal Junior College Vizag for JEE Advanced and NEET UG Preparation? – bansalclassesvizag.com. Expert coaching, comprehensive study material, and proven methodologies at Bansal Junior College Vizag." />
-        
-      </Helmet>
+      <SEO
+        title="Why Choose Bansal Junior College Vizag for JEE Advanced and NEET UG Preparation? – bansalclassesvizag.com"
+        description="Discover Why Choose Bansal Junior College Vizag for JEE Advanced and NEET UG Preparation? – bansalclassesvizag.com. Expert coaching, comprehensive study material, and proven methodologies at Bansal Junior College Vizag."
+        canonicalUrl="https://bansalclassesvizag.com/why-choose-bansal-classes-vizag-for-jee-advanced-and-neet-ug-preparation"
+        ogType="article"
+      />
       <div id="content" className="site-content">
         {parse(`
 		<div class="ast-container">
 		
 
 	<div id="primary" class="content-area primary">
-
-		
+				
 					<main id="main" class="site-main">
 				
 

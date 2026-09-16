@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import SEO from '../../../components/seo/SEO';
 import { MapPin, Phone, Mail, Clock, Send, Loader2, CheckCircle2 } from 'lucide-react';
 import { useState } from 'react';
 
@@ -48,10 +48,11 @@ export default function Contact() {
 
   return (
     <>
-      <Helmet>
-        <title>Contact Us – Bansal Junior College Vizag</title>
-        <meta name="description" content="Get in touch with Bansal Junior College Vizag. Find our campus location, phone number, and send us your inquiries for admissions." />
-      </Helmet>
+      <SEO
+        title="Contact Us – Bansal Junior College Vizag"
+        description="Get in touch with Bansal Junior College Vizag. Find our campus location, phone number, and send us your inquiries for admissions."
+        canonicalUrl="https://bansalclassesvizag.com/contact-us"
+      />
 
       {/* Page Header */}
       <header className="bg-college-navy text-white py-16 md:py-24 relative overflow-hidden">

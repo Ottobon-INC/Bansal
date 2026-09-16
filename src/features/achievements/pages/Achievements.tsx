@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import SEO from '../../../components/seo/SEO';
 import PromotionalBanner from '../../../components/ui/PromotionalBanner';
 
 export default function Achievements() {
@@ -19,10 +19,11 @@ export default function Achievements() {
 
   return (
     <>
-      <Helmet>
-        <title>Achievements | Bansal Junior College Vizag</title>
-        <meta name="description" content="Explore the outstanding achievements and top ranks secured by Bansal Junior College students in JEE Advanced, JEE Main, and NEET." />
-      </Helmet>
+      <SEO
+        title="Achievements | Bansal Junior College Vizag"
+        description="Explore the outstanding achievements and top ranks secured by Bansal Junior College students in JEE Advanced, JEE Main, and NEET."
+        canonicalUrl="https://bansalclassesvizag.com/achievements"
+      />
 
       {/* Page Header */}
       <header className="bg-college-navy text-white py-12 md:py-20 relative overflow-hidden">

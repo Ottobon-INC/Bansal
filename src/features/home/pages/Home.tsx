@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import SEO from '../../../components/seo/SEO';
 import { Award, BookOpen, GraduationCap, Users } from 'lucide-react';
 import HeroSection from '../../../components/ui/HeroSection';
 import FeatureGrid from '../../../components/ui/FeatureGrid';
@@ -67,10 +67,28 @@ export default function Home() {
 
   return (
     <>
-      <Helmet>
-        <title>Bansal Junior College Vizag - Premier Institute for JEE & NEET</title>
-        <meta name="description" content="Welcome to Bansal Junior College Vizag. We provide top-tier coaching for JEE Advanced and NEET UG with experienced faculty and proven methodologies." />
-      </Helmet>
+      <SEO 
+        title="Bansal Junior College Vizag - Premier Institute for JEE & NEET"
+        description="Welcome to Bansal Junior College Vizag. We provide top-tier coaching for JEE Advanced and NEET UG with experienced faculty and proven methodologies."
+        canonicalUrl="https://bansalclassesvizag.com/"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "EducationalOrganization",
+          "name": "Bansal Junior College Vizag",
+          "url": "https://bansalclassesvizag.com/",
+          "logo": "https://bansalclassesvizag.com/wp-content/uploads/2024/11/bansal-removebg-preview.png",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "49-52-5, Sankara Matam Rd, Beside Karnataka Bank, Akkayapalem",
+            "addressLocality": "Visakhapatnam",
+            "addressRegion": "Andhra Pradesh",
+            "postalCode": "530016",
+            "addressCountry": "IN"
+          },
+          "telephone": "+91-8919116433",
+          "email": "bansalclassesvizag@gmail.com"
+        }}
+      />
 
       <main>
         <HeroSection 

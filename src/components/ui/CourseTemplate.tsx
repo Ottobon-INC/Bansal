@@ -1,5 +1,5 @@
-import { Helmet } from 'react-helmet-async';
-import { Link } from 'react-router-dom';
+import SEO from '../seo/SEO';
+import { Link, useLocation } from 'react-router-dom';
 import { CheckCircle, Clock, Users, BookOpen } from 'lucide-react';
 
 interface CourseTemplateProps {
@@ -21,11 +21,28 @@ export default function CourseTemplate({
   target,
   image
 }: CourseTemplateProps) {
+  const location = useLocation();
+
   return (
     <>
-      <Helmet>
-        <title>{title} | Bansal Junior College Vizag</title>
-      </Helmet>
+      <SEO
+        title={`${title} | Bansal Junior College Vizag`}
+        description={subtitle}
+        canonicalUrl={`https://bansalclassesvizag.com${location.pathname}`}
+        ogImage={image}
+        ogType="article"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "Course",
+          "name": title,
+          "description": subtitle,
+          "provider": {
+            "@type": "EducationalOrganization",
+            "name": "Bansal Junior College Vizag",
+            "sameAs": "https://bansalclassesvizag.com/"
+          }
+        }}
+      />
 
       {/* Page Header */}
       <div className="bg-college-navy text-white py-20 relative overflow-hidden">

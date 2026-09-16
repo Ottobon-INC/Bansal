@@ -1,21 +1,21 @@
 import parse from 'html-react-parser';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../../../components/seo/SEO';
 
 export default function JeeAdvancedCourseAComprehensiveGuideToAceTheExam() {
   return (
     <>
-      <Helmet>
-        <title>JEE Advanced Course: A Comprehensive Guide to Ace the Exam – bansalclassesvizag.com</title>
-        <meta name="description" content="Discover JEE Advanced Course: A Comprehensive Guide to Ace the Exam – bansalclassesvizag.com. Expert coaching, comprehensive study material, and proven methodologies at Bansal Junior College Vizag." />
-        
-      </Helmet>
+      <SEO
+        title="JEE Advanced Course: A Comprehensive Guide to Ace the Exam – bansalclassesvizag.com"
+        description="Discover JEE Advanced Course: A Comprehensive Guide to Ace the Exam – bansalclassesvizag.com. Expert coaching, comprehensive study material, and proven methodologies at Bansal Junior College Vizag."
+        canonicalUrl="https://bansalclassesvizag.com/jee-advanced-course-a-comprehensive-guide-to-ace-the-exam"
+        ogType="article"
+      />
       <div id="content" className="site-content">
         {parse(`
 		<div class="ast-container">
 				<div data-elementor-type="wp-post" data-elementor-id="613" class="elementor elementor-613">
 				<div class="elementor-element elementor-element-d9a289b e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-parent" data-id="d9a289b" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-8fe8afa elementor-widget elementor-widget-heading" data-id="8fe8afa" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
 					<h2 class="elementor-heading-title elementor-size-default">JEE Advanced Course: A Comprehensive Guide to Ace the Exam
 
 </h2>				</div>
