@@ -1,8 +1,11 @@
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ArrowRight } from 'lucide-react';
 import { useState, useEffect } from 'react';
+interface HeaderProps {
+  onOpenRegistration?: () => void;
+}
 
-export default function Header() {
+export default function Header({ onOpenRegistration }: HeaderProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isLightSlide, setIsLightSlide] = useState(false);
   const location = useLocation();
@@ -70,6 +73,14 @@ export default function Header() {
         {/* Right Action Pills (Desktop) */}
         <div className="hidden lg:flex items-center space-x-3 pt-4">
 
+          {/* BOOST Button */}
+          <button 
+            onClick={onOpenRegistration}
+            className="flex items-center px-6 py-2 rounded-full bg-[#F97316] text-white hover:bg-[#EA580C] transition-all shadow-[0_0_15px_rgba(249,115,22,0.6)] font-bold text-sm animate-pulse hover:animate-none"
+          >
+            BOOST Registration
+          </button>
+
           {/* Enroll Now Button */}
           <Link 
             to="/contact-us"
@@ -112,6 +123,17 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
+            
+            <button 
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+                if (onOpenRegistration) onOpenRegistration();
+              }}
+              className="bg-[#F97316] text-white font-bold py-3 text-center rounded-xl mt-4 flex items-center justify-center shadow-[0_0_15px_rgba(249,115,22,0.6)] animate-pulse hover:animate-none"
+            >
+              BOOST Registration
+            </button>
+
             <Link 
               to="/contact-us"
               className="bg-gray-900 text-white font-bold py-3 text-center rounded-xl mt-4 flex items-center justify-center"

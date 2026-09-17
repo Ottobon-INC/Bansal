@@ -1,6 +1,8 @@
+import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
+import RegistrationModal from './components/common/RegistrationModal';
 
 import Home from './features/home/pages/Home';
 import About from './features/about/pages/About';
@@ -16,10 +18,21 @@ import PopularCourses from './features/courses/pages/PopularCourses';
 import WhyChooseBansalClassesVizagForJeeAdvancedAndNeetUgPreparation from './features/courses/pages/WhyChooseBansalClassesVizagForJeeAdvancedAndNeetUgPreparation';
 
 function App() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  useEffect(() => {
+    // Small delay for better UX
+    const timer = setTimeout(() => {
+      setIsModalOpen(true);
+    }, 500);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <BrowserRouter>
       <div className="flex flex-col min-h-screen bg-gray-50">
-        <Header />
+        <RegistrationModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+        <Header onOpenRegistration={() => setIsModalOpen(true)} />
         <main className="flex-grow">
           <Routes>
         <Route path="/" element={<Home />} />
