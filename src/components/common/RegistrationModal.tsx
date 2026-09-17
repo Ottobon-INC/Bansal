@@ -77,7 +77,7 @@ const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, onClose }
         {/* Header */}
         <div className="sticky top-0 z-10 flex items-center justify-between px-6 py-4 bg-white border-b border-gray-100 rounded-t-xl">
           <div>
-            <h2 className="text-2xl font-bold text-gray-900 font-sans">BOOST 2026–27 Registration</h2>
+            <h2 className="text-2xl font-bold text-gray-900 font-sans">BOOST 2027-28 Registration</h2>
             <p className="text-sm text-gray-500">Just ₹0 to reserve your scholarship.</p>
           </div>
           <button 
@@ -132,12 +132,7 @@ const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, onClose }
                     <label className="block text-sm font-medium text-gray-700 mb-1">Class *</label>
                     <select required name="class" className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-shadow bg-white text-gray-700">
                       <option value="">Select...</option>
-                      <option value="8">Class 8</option>
-                      <option value="9">Class 9</option>
                       <option value="10">Class 10</option>
-                      <option value="11">Class 11</option>
-                      <option value="12">Class 12</option>
-                      <option value="12+">Class 12 Passed (Dropper)</option>
                     </select>
                   </div>
                 </div>
@@ -158,12 +153,12 @@ const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, onClose }
                     </select>
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">School name</label>
-                    <input type="text" name="schoolName" className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-shadow" />
+                    <label className="block text-sm font-medium text-gray-700 mb-1">School name *</label>
+                    <input required type="text" name="schoolName" className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-shadow" />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">City</label>
-                    <input type="text" name="city" className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-shadow" />
+                    <label className="block text-sm font-medium text-gray-700 mb-1">City *</label>
+                    <input required type="text" name="city" className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-shadow" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">State</label>
@@ -195,24 +190,20 @@ const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, onClose }
                     <label className="block text-sm font-medium text-gray-700 mb-1">Preferred exam date *</label>
                     <select required name="examDate" className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-shadow bg-white text-gray-700">
                       <option value="">Select...</option>
-                      <option value="Upcoming sunday">Upcoming Sunday</option>
-                      <option value="next month first sunday">Next Month First Sunday</option>
+                      <option value="November 1st">Nov 1st</option>
+                      <option value="November 22nd">Nov 22nd</option>
                     </select>
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">Exam mode *</label>
                     <select required name="examMode" className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-shadow bg-white text-gray-700">
-                      <option value="">Select...</option>
-                      <option value="Online">Online</option>
                       <option value="Offline">Offline</option>
                     </select>
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">Preferred centre *</label>
                     <select required name="preferredCentre" className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-shadow bg-white text-gray-700">
-                      <option value="">Select centre</option>
-                      <option value="vizag branch 1">Vizag Branch 1</option>
-                      <option value="vizag branch 2">Vizag Branch 2</option>
+                      <option value="Bansal junior college, Visakhapatnam">Bansal junior college, Visakhapatnam</option>
                     </select>
                   </div>
                 </div>
