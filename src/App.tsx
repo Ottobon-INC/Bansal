@@ -5,6 +5,7 @@ import Footer from './components/layout/Footer';
 import RegistrationModal from './components/common/RegistrationModal';
 
 import Home from './features/home/pages/Home';
+import NotFound from './features/common/pages/NotFound';
 import About from './features/about/pages/About';
 import Achievements from './features/achievements/pages/Achievements';
 import Contact from './features/contact/pages/Contact';
@@ -53,6 +54,7 @@ function App() {
         <Route path="/sterling-for-jee-dropper" element={<Navigate to="/jee-advanced#sterling" replace />} />
         <Route path="/sterling-for-neet-dropper" element={<Navigate to="/neet-ug#sterling-neet" replace />} />
         <Route path="/why-choose-bansal-classes-vizag-for-jee-advanced-and-neet-ug-preparation" element={<WhyChooseBansalClassesVizagForJeeAdvancedAndNeetUgPreparation />} />
+        <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />
