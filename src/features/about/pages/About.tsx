@@ -26,7 +26,7 @@ export default function About() {
           <div className="flex flex-col md:flex-row gap-16 items-center mb-24">
             <div className="w-full md:w-1/2">
               <img 
-                src="/wp-content/uploads/2024/11/5.png" 
+                src="/wp-content/uploads/2024/11/5.webp" 
                 alt="Bansal Junior College Vision" 
                 className="rounded-2xl shadow-2xl w-full object-cover h-[400px]"
               />
@@ -74,7 +74,7 @@ export default function About() {
               </div>
               <div className="relative flex-1 w-full mt-4 min-h-[400px] lg:min-h-0">
                 <img 
-                  src="/wp-content/uploads/elementor/thumbs/Untitled-design-11-1-qxpyb3itkifdvskhhkq3ijtvl30u2qvkjg63o0txzs.png" 
+                  src="/wp-content/uploads/elementor/thumbs/Untitled-design-11-1-qxpyb3itkifdvskhhkq3ijtvl30u2qvkjg63o0txzs.webp" 
                   alt="Late V.K. Bansal Sir" 
                   className="absolute inset-0 w-full h-full object-cover object-top shadow-2xl block border-b-0"
                 />

@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 import ProgramCube from './ProgramCube';
 
 interface HeroSectionProps {
@@ -19,7 +20,7 @@ export default function HeroSection({
   subtitle,
   primaryCtaText = 'Enroll Now',
   primaryCtaLink = '/contact-us',
-  backgroundImage = '/hero-bg.png',
+  backgroundImage = '/hero-bg.webp',
 }: HeroSectionProps) {
   useEffect(() => {
     window.dispatchEvent(new CustomEvent('heroSlideChange', { detail: 0 }));
@@ -27,6 +28,11 @@ export default function HeroSection({
 
   return (
     <div className="bg-white p-2 md:p-4">
+      {backgroundImage && (
+        <Helmet>
+          <link rel="preload" as="image" href={backgroundImage} />
+        </Helmet>
+      )}
       <div className="relative bg-college-navy min-h-[calc(100vh-2rem)] flex flex-col justify-center overflow-hidden rounded-[2.5rem] shadow-2xl">
         
         <motion.div 

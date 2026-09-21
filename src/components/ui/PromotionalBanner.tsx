@@ -4,10 +4,10 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 export default function PromotionalBanner({ banners }: { banners?: string[] }) {
   // Using placeholders for banners initially if not provided.
   const displayBanners = banners || [
-    '/wp-content/uploads/2024/11/1-1.png',
-    '/wp-content/uploads/2024/11/2-2.png',
-    '/wp-content/uploads/2024/11/3-1.png',
-    '/wp-content/uploads/2024/11/5-1.png'
+    '/wp-content/uploads/2024/11/1-1.webp',
+    '/wp-content/uploads/2024/11/2-2.webp',
+    '/wp-content/uploads/2024/11/3-1.webp',
+    '/wp-content/uploads/2024/11/5-1.webp'
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

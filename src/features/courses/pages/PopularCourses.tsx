@@ -59,7 +59,7 @@ export default function PopularCourses() {
 			
 		
 		<div class="wpr-button-wrap elementor-clearfix">
-		<a class="wpr-button wpr-button-effect wpr-button-none" data-text="" href="../bulls-eye-for-jee/index.html">
+		<a class="wpr-button wpr-button-effect wpr-button-none" data-text="" href="/courses/jee-advanced/bulls-eye">
 			
 			<span class="wpr-button-content">
 									<span class="wpr-button-text">Learn More</span>
@@ -168,7 +168,7 @@ export default function PopularCourses() {
 			
 		
 		<div class="wpr-button-wrap elementor-clearfix">
-		<a class="wpr-button wpr-button-effect wpr-button-none" data-text="" href="../nucleus-for-jee/index.html">
+		<a class="wpr-button wpr-button-effect wpr-button-none" data-text="" href="/courses/jee-advanced/nucleus">
 			
 			<span class="wpr-button-content">
 									<span class="wpr-button-text">Learn More</span>
@@ -278,7 +278,7 @@ export default function PopularCourses() {
 			
 		
 		<div class="wpr-button-wrap elementor-clearfix">
-		<a class="wpr-button wpr-button-effect wpr-button-none" data-text="" href="../sterling-for-jee-dropper/index.html">
+		<a class="wpr-button wpr-button-effect wpr-button-none" data-text="" href="/courses/jee-advanced/sterling">
 			
 			<span class="wpr-button-content">
 									<span class="wpr-button-text">Learn More</span>

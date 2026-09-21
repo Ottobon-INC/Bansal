@@ -54,9 +54,9 @@ export default function Footer() {
             <ul className="space-y-3">
               <li><Link to="/jee-advanced" className="text-gray-300 hover:text-white transition-colors">JEE Advanced</Link></li>
               <li><Link to="/neet-ug" className="text-gray-300 hover:text-white transition-colors">NEET UG</Link></li>
-              <li><Link to="/bulls-eye-for-jee" className="text-gray-300 hover:text-white transition-colors">Bull's Eye (JEE)</Link></li>
+              <li><Link to="/courses/jee-advanced/bulls-eye" className="text-gray-300 hover:text-white transition-colors">Bull's Eye (JEE)</Link></li>
               <li><Link to="/nucleus-for-neet" className="text-gray-300 hover:text-white transition-colors">Nucleus (NEET)</Link></li>
-              <li><Link to="/sterling-for-jee-dropper" className="text-gray-300 hover:text-white transition-colors">Sterling (Droppers)</Link></li>
+              <li><Link to="/courses/jee-advanced/sterling" className="text-gray-300 hover:text-white transition-colors">Sterling (Droppers)</Link></li>
             </ul>
           </div>
 

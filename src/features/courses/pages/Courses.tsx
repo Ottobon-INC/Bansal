@@ -11,7 +11,7 @@ export default function Courses() {
       badge: 'Engineering',
       duration: '2 Years',
       target: 'Class 11 & 12',
-      image: '/wp-content/uploads/2024/11/1-1.png'
+      image: '/wp-content/uploads/2024/11/1-1.webp'
     },
     {
       title: 'NEET UG',
@@ -20,16 +20,16 @@ export default function Courses() {
       badge: 'Medical',
       duration: '2 Years',
       target: 'Class 11 & 12',
-      image: '/wp-content/uploads/2024/11/2-2.png'
+      image: '/wp-content/uploads/2024/11/2-2.webp'
     },
     {
       title: 'Sterling for JEE (Dropper)',
       description: 'Dedicated 1-year repeater program for students determined to improve their JEE rank with intensive coaching and regular mock tests.',
-      link: '/sterling-for-jee-dropper',
+      link: '/courses/jee-advanced/sterling',
       badge: 'Repeaters',
       duration: '1 Year',
       target: '12th Pass',
-      image: '/wp-content/uploads/2024/11/3-1.png'
+      image: '/wp-content/uploads/2024/11/3-1.webp'
     },
     {
       title: 'Sterling for NEET (Dropper)',
@@ -38,16 +38,16 @@ export default function Courses() {
       badge: 'Repeaters',
       duration: '1 Year',
       target: '12th Pass',
-      image: '/wp-content/uploads/2024/11/2-2.png'
+      image: '/wp-content/uploads/2024/11/2-2.webp'
     },
     {
       title: 'Nucleus for JEE',
       description: 'A strong foundation program for early starters aiming to build solid fundamentals for JEE Main and Advanced.',
-      link: '/nucleus-for-jee',
+      link: '/courses/jee-advanced/nucleus',
       badge: 'Foundation',
       duration: '2+ Years',
       target: 'Class 11',
-      image: '/wp-content/uploads/2024/11/1-1.png'
+      image: '/wp-content/uploads/2024/11/1-1.webp'
     },
     {
       title: 'Nucleus for NEET',
@@ -56,7 +56,7 @@ export default function Courses() {
       badge: 'Foundation',
       duration: '2+ Years',
       target: 'Class 11',
-      image: '/wp-content/uploads/2024/11/2-2.png'
+      image: '/wp-content/uploads/2024/11/2-2.webp'
     }
   ];
 

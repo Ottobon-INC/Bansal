@@ -14,7 +14,7 @@ export default function SEO({
   description,
   canonicalUrl,
   ogType = 'website',
-  ogImage = 'https://bansalclassesvizag.com/hero-bg.png',
+  ogImage = 'https://bansalclassesvizag.com/hero-bg.webp',
   schema,
 }: SEOProps) {
   // Use the full production URL for OG image if a relative path is passed

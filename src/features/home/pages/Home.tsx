@@ -43,7 +43,7 @@ export default function Home() {
       badge: 'B.Tech / B.E.',
       duration: '2 Years',
       target: 'Class 11 & 12',
-      image: '/wp-content/uploads/2024/11/1-1.png'
+      image: '/wp-content/uploads/2024/11/1-1.webp'
     },
     {
       title: 'NEET UG',
@@ -52,16 +52,16 @@ export default function Home() {
       badge: 'Medical',
       duration: '2 Years',
       target: 'Class 11 & 12',
-      image: '/wp-content/uploads/2024/11/2-2.png'
+      image: '/wp-content/uploads/2024/11/2-2.webp'
     },
     {
       title: 'Sterling for Droppers',
       description: 'Dedicated 1-year repeater program for students determined to improve their rank.',
-      link: '/sterling-for-jee-dropper',
+      link: '/courses/jee-advanced/sterling',
       badge: 'Repeaters',
       duration: '1 Year',
       target: '12th Pass',
-      image: '/wp-content/uploads/2024/11/3-1.png'
+      image: '/wp-content/uploads/2024/11/3-1.webp'
     }
   ];
 
@@ -94,7 +94,7 @@ export default function Home() {
         <HeroSection 
           title="Transforming Dreams Into Reality"
           subtitle="Join the legacy of excellence. Expert coaching for JEE Advanced, NEET UG, and Board Examinations."
-          backgroundImage="/hero-bg.png"
+          backgroundImage="/hero-bg.webp"
         />
 
         {/* Features Section */}
