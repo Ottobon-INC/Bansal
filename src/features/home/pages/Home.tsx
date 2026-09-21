@@ -68,8 +68,8 @@ export default function Home() {
   return (
     <>
       <SEO 
-        title="Bansal Junior College Vizag - Premier Institute for JEE & NEET"
-        description="Welcome to Bansal Junior College Vizag. We provide top-tier coaching for JEE Advanced and NEET UG with experienced faculty and proven methodologies."
+        title="Bansal Classes Vizag | JEE & NEET Coaching"
+        description="Bansal Classes Vizag offers JEE Advanced and NEET UG coaching programs for students preparing for competitive entrance examinations in Visakhapatnam."
         canonicalUrl="https://bansalclassesvizag.com/"
         schema={{
           "@context": "https://schema.org",

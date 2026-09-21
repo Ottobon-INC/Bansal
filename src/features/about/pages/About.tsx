@@ -1,13 +1,14 @@
 import SEO from '../../../components/seo/SEO';
 import SectionHeading from '../../../components/ui/SectionHeading';
 import { GraduationCap, Briefcase, BookOpen } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function About() {
   return (
     <>
       <SEO
-        title="About Us | Bansal Junior College Vizag"
-        description="Learn about the legacy of Bansal Junior College Vizag. We are committed to excellence in education and providing top-tier coaching for JEE and NEET."
+        title="About Bansal Classes Vizag | Bansal Classes"
+        description="Learn about the legacy of Bansal Junior College Vizag. We are committed to excellence in education and providing coaching for JEE and NEET."
         canonicalUrl="https://bansalclassesvizag.com/about-us"
       />
 
@@ -37,7 +38,7 @@ export default function About() {
                 At Bansal Junior College Vizag, our mission is to provide an unparalleled educational ecosystem that empowers students to reach their highest potential. We believe that every student has the capability to excel when provided with the right guidance, rigorous curriculum, and a competitive environment.
               </p>
               <p className="text-gray-600 leading-relaxed text-lg">
-                Founded on the principles of academic excellence and integrity, our institution has consistently produced top ranks in JEE Advanced, NEET UG, and various other competitive examinations. Our faculty comprises industry veterans and subject matter experts dedicated to your success.
+                Founded on the principles of academic excellence and integrity, our institution has consistently produced top ranks in <Link to="/jee-advanced" className="text-college-navy hover:text-college-gold font-semibold transition-colors">JEE Advanced</Link>, <Link to="/neet-ug" className="text-college-navy hover:text-college-gold font-semibold transition-colors">NEET UG</Link>, and various other competitive examinations. Our faculty comprises industry veterans and subject matter experts dedicated to your success.
               </p>
             </div>
           </div>

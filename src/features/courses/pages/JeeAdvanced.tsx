@@ -9,8 +9,8 @@ export default function JeeAdvanced() {
   return (
     <>
       <SEO
-        title="JEE Advanced Programs | Bansal Junior College Vizag"
-        description="Discover JEE Advanced Programs | Bansal Junior College Vizag. Expert coaching, comprehensive study material, and proven methodologies at Bansal Junior College Vizag."
+        title="JEE Advanced Coaching in Vizag | Bansal Classes"
+        description="Explore JEE Advanced coaching programs at Bansal Classes Vizag, including Bulls Eye, Nucleus and Sterling programs for JEE preparation."
         canonicalUrl="https://bansalclassesvizag.com/jee-advanced"
         schema={{
           "@context": "https://schema.org",

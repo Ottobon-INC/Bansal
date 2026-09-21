@@ -53,14 +53,14 @@ export default function NeetUg() {
   return (
     <>
       <SEO
-        title="NEET UG Programs | Bansal Junior College Vizag"
-        description="Discover NEET UG Programs | Bansal Junior College Vizag. Expert coaching, comprehensive study material, and proven methodologies at Bansal Junior College Vizag."
+        title="NEET Coaching in Vizag | Bansal Classes"
+        description="Explore NEET UG coaching programs at Bansal Classes Vizag for students preparing for medical entrance examinations in Visakhapatnam."
         canonicalUrl="https://bansalclassesvizag.com/neet-ug"
         schema={{
           "@context": "https://schema.org",
           "@type": "Course",
           "name": "NEET UG Programs",
-          "description": "Discover NEET UG Programs | Bansal Junior College Vizag. Expert coaching, comprehensive study material, and proven methodologies.",
+          "description": "Explore NEET UG coaching programs at Bansal Classes Vizag for students preparing for medical entrance examinations in Visakhapatnam.",
           "provider": {
             "@type": "EducationalOrganization",
             "name": "Bansal Junior College Vizag",

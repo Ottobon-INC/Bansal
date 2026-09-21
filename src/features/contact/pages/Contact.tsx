@@ -49,7 +49,7 @@ export default function Contact() {
   return (
     <>
       <SEO
-        title="Contact Us – Bansal Junior College Vizag"
+        title="Contact Bansal Classes Vizag | Address & Contact"
         description="Get in touch with Bansal Junior College Vizag. Find our campus location, phone number, and send us your inquiries for admissions."
         canonicalUrl="https://bansalclassesvizag.com/contact-us"
       />

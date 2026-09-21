@@ -56,7 +56,7 @@ export default function ProgramPageLayout({ program, categoryName, categoryLink 
   return (
     <>
       <SEO
-        title={`${program.name} | Bansal Classes Vizag`}
+        title={program.seoTitle || `${program.name} | Bansal Classes Vizag`}
         description={program.shortDesc}
         canonicalUrl={`https://bansalclassesvizag.com/courses/jee-advanced/${program.slug}`}
         schema={[schema, breadcrumbSchema]}

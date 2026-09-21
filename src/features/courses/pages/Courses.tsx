@@ -63,7 +63,7 @@ export default function Courses() {
   return (
     <>
       <SEO
-        title="Courses & Programs | Bansal Junior College Vizag"
+        title="JEE & NEET Coaching Courses | Bansal Classes Vizag"
         description="Discover our flagship academic programs including JEE Advanced, NEET UG, Sterling Droppers, and Foundation courses at Bansal Junior College."
         canonicalUrl="https://bansalclassesvizag.com/courses"
       />
