@@ -200,9 +200,9 @@ export default function About() {
             {/* Left Image Section */}
             <div className="w-full md:w-5/12">
               <img 
-                src="/suresh.jpg" 
+                src="/suresh.jpg?v=2" 
                 alt="Suresh Kumar Marrapu" 
-                className="w-full h-[450px] object-cover object-top shadow-lg rounded-2xl"
+                className="w-full h-[450px] object-cover object-center shadow-lg rounded-2xl"
               />
             </div>
 
