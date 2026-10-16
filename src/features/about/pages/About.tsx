@@ -195,6 +195,61 @@ export default function About() {
             </div>
           </div>
 
+          {/* Suresh Principal Section */}
+          <div className="my-32 flex flex-col md:flex-row gap-12 lg:gap-20 items-center">
+            {/* Left Image Section */}
+            <div className="w-full md:w-5/12">
+              <img 
+                src="/suresh.jpg" 
+                alt="Suresh Kumar Marrapu" 
+                className="w-full h-[450px] object-cover object-top shadow-lg rounded-2xl"
+              />
+            </div>
+
+            {/* Right Content Section */}
+            <div className="w-full md:w-7/12">
+              <div className="flex items-center mb-8">
+                <div className="w-16 h-0.5 bg-college-navy mr-4"></div>
+                <h2 className="text-xl text-gray-800 font-medium tracking-wide">Leadership & Excellence</h2>
+              </div>
+
+              <h3 className="text-4xl font-bold text-college-navy mb-2 tracking-wide">Suresh Kumar Marrapu</h3>
+              <p className="text-lg text-college-gold font-bold mb-10 uppercase tracking-wider">Principal</p>
+
+              <div className="space-y-6">
+                <div className="flex items-center bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mr-5 shadow-sm text-college-navy shrink-0">
+                    <BookOpen className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-500 font-semibold uppercase tracking-wider mb-1">Subject</p>
+                    <p className="text-lg font-bold text-gray-800">Physics</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mr-5 shadow-sm text-college-navy shrink-0">
+                    <GraduationCap className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-500 font-semibold uppercase tracking-wider mb-1">Qualification</p>
+                    <p className="text-lg font-bold text-gray-800">M.Sc(Phy), B.Ed</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mr-5 shadow-sm text-college-navy shrink-0">
+                    <Briefcase className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-500 font-semibold uppercase tracking-wider mb-1">Experience</p>
+                    <p className="text-lg font-bold text-gray-800">15 years</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Faculty Section */}
           <div className="mt-32">
             <SectionHeading title="Meet Our Experts" subtitle="Learn from the best minds in the industry." />
